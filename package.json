@@ -6,7 +6,7 @@
   "scripts": {
     "start": "cd ng && ng build --output-path dist --base-href ./ && cd.. && electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/efrenpar/Auditapp",
   "keywords": [
     "Electron",
     "quick",
