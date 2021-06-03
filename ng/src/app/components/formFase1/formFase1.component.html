@@ -1,0 +1,39 @@
+<div class="container">
+    <h3 class="mt-5">Planificación</h3>
+    <div class="row mt-3">
+        <div class="col-12">
+            <label for="origenes" class="form-label">Origen de la auditoria</label>
+            <select id="origenes" class="form-select" >
+                <option *ngFor="let option of optionsOrigin">
+                    {{option}}
+                </option>
+            </select>
+        </div>
+        <div class="col-12 mt-2 ">
+            <div class="form-check">
+                <input id="visita" type="checkbox" class="form-check-input">
+                <label for="visita" class="form-label ">Realización de visita preliminar al area evaluada</label>
+            </div>
+        </div>
+        <div class="col-12 ">
+            <label for="fecha" class="form-label ">Fecha</label>
+            <input id="fecha" type="date" class="form-control">
+        </div>
+        <div class="col-12 mt-2 ">
+            <label for="objetivo" class="form-label ">Objetio general de la auditoria</label>
+            <input id="objetivo" type="text" class="form-control">
+        </div>
+        <div class="col-12 mt-3">
+            <dynamicInput 
+                [titulo]="'Objetivos especificos'"
+                [item]="'Objetivo'"
+                ></dynamicInput>
+        </div>
+        <div class="col-12 mt-3">
+                <dynamicInput 
+                [titulo]="'Puntos a evaluar'"
+                [item]="'Punto'"
+                ></dynamicInput>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+#back-top, #delete {
+    background: #04dbec;
+    height: 30px;
+    width: 30px;
+    left: 160px;
+    bottom: 25px;
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 48px;
+    border: 2px solid transparent;
+}
+
+.icon{
+    position:relative;
+    top:-17px;
+    left:-8px;
+}
+
+#delete{
+    background: #1f2b7b ;
+}
+
+.delete-icon{
+    top:-30px;
+    left:80%!important;
+}
+

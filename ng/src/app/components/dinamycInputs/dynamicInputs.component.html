@@ -1,0 +1,16 @@
+<label >{{titulo}}</label>
+<div id="back-top" class="btn" style="display:block"
+(click)="onAddObjetivo()"
+>
+    <fa-icon class="icon" [icon]="faPlus"></fa-icon>
+</div>
+<div *ngFor="let objetivo of objetivos; let i=index">
+    <label>{{item}}: {{i+1}} </label>
+    <input type=text  [(ngModel)]="objetivo.value" #name="ngModel"
+    name="value{{i}}" value="objetivo.value">
+    <div id="delete" class="btn delete-icon" style="display:block"
+        (click)="removeValue(i)"
+        >
+    <fa-icon class="icon" [icon]="faMinus"></fa-icon>
+</div>
+</div>

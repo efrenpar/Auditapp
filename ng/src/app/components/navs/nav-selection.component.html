@@ -1,0 +1,49 @@
+<ng-container>
+  <div class="text-center text-white hero-cap">
+    <h2 >Auditapp</h2>
+  </div>  
+  <div class="row mt-5 mb-5 ">
+      <div class="col-5 offset-3">
+        <a  class="btn hero-btn"  data-animation="fadeInLeft" data-delay=".9s" 
+        (click)="regresar()"
+                >
+                    
+                    <!-- Arrow SVG icon -->
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                  <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068
+                          c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557
+                          l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104
+                          c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"/> </svg>
+                          Regresar
+        </a>
+      </div>
+    <div class="card col-12 col-md-6 offset-md-3">
+        <div class="card-body">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="fase1-tab" data-bs-toggle="tab" data-bs-target="#fase1body" type="button" role="tab" aria-controls="home" aria-selected="true">Fase1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="fase2-tab" data-bs-toggle="tab" data-bs-target="#fase2body" type="button" role="tab" aria-controls="profile" aria-selected="false">Fase2</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="fase3-tab" data-bs-toggle="tab" data-bs-target="#fase2body" type="button" role="tab" aria-controls="contact" aria-selected="false">Fase3</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="fase1body" role="tabpanel" aria-labelledby="home-tab">
+                <app-Fase1></app-Fase1>
+            </div>
+            <div class="tab-pane fade" id="fase2body" role="tabpanel" aria-labelledby="profile-tab">
+
+            </div>
+            <div class="tab-pane fade" id="fase3body" role="tabpanel" aria-labelledby="contact-tab">
+
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+</ng-container>
